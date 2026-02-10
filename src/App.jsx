@@ -17,14 +17,14 @@ function App() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Web3Forms integration - replace with your access key
+    // Web3Forms integration
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        access_key: 'YOUR_WEB3FORMS_ACCESS_KEY_HERE', // Get this from web3forms.com
+        access_key: 'dc9dbba3-b8e2-48ef-85fc-d16b74a575ad',
         name: formData.name,
         email: formData.email,
         company: formData.company,
@@ -63,7 +63,9 @@ function App() {
       <header className="header">
         <div className="container header-content">
           <div className="logo">
-            <div className="logo-icon">🌷</div>
+            <div className="logo-icon">
+              <img src="/tulip-logo.png" alt="Tulip IT Group" />
+            </div>
             <span className="logo-text">Tulip <span className="logo-highlight">IT Group</span></span>
           </div>
           <nav className="nav">
@@ -334,7 +336,9 @@ function App() {
           <div className="footer-main">
             <div className="footer-brand">
               <div className="footer-logo">
-                <div className="logo-icon">🌷</div>
+                <div className="logo-icon">
+                  <img src="/tulip-logo.png" alt="Tulip IT Group" />
+                </div>
                 <span className="logo-text">Tulip <span className="logo-highlight">IT Group</span></span>
               </div>
               <p className="footer-tagline">
